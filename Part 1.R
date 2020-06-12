@@ -42,7 +42,7 @@ dev.off()
 #"growth_data.csv" (file to be downloaded)
 
 #6. importing the csv file into R and listing column names
-download.file("https://raw.githubusercontent.com/dbboddu/SLE712_files/master/bioinfo_asst3_part1_files/growth_data.csv",
+    download.file("https://raw.githubusercontent.com/dbboddu/SLE712_files/master/bioinfo_asst3_part1_files/growth_data.csv",
               destfile = "growth_data.csv") #downloading the file 
 
 Growth_data <- read.csv("growth_data.csv", header = TRUE, stringsAsFactors = FALSE) #reading the file and converting the strings
